@@ -1,9 +1,9 @@
 const SURVEY_CONFIG = {
   googleAppsScriptUrl: "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE",
   songs: [
-    {id:"song1", title:"Song 1: Ja bih te sanjala", videoUrl:"https://media.world-stage.org/ws1999rs-jbt.mov", subtitleUrl:"https://media.world-stage.org/ws1999rs-jbt.vtt"},
-    {id:"song2", title:"Song 2: Svet tuge", videoUrl:"https://media.world-stage.org/ws1999rs-stx.mov", subtitleUrl:"https://media.world-stage.org/ws1999rs-stx.vtt"},
-    {id:"song3", title:"Song 3: Vreme je", videoUrl:"https://media.world-stage.org/ws1999rs-vjx.mov", subtitleUrl:"https://media.world-stage.org/ws1999rs-vjx.vtt"},
-    {id:"song4", title:"Song 4: Ti me ne voliš", videoUrl:"https://media.world-stage.org/ws1999rs-tmn.mov", subtitleUrl:"https://media.world-stage.org/ws1999rs-tmn.vtt"}
+    {id:"song1", title:"Song 1: Ja bih te sanjala", videoUrl:"https://media.world-stage.org/ws1999rs-jbt.mov", subtitleUrl:"subtitles/ws1999rs-jbt.vtt"},
+    {id:"song2", title:"Song 2: Svet tuge", videoUrl:"https://media.world-stage.org/ws1999rs-stx.mov", subtitleUrl:"subtitles/ws1999rs-stx.vtt"},
+    {id:"song3", title:"Song 3: Vreme je", videoUrl:"https://media.world-stage.org/ws1999rs-vjx.mov", subtitleUrl:"subtitles/ws1999rs-vjx.vtt"},
+    {id:"song4", title:"Song 4: Ti me ne voliš", videoUrl:"https://media.world-stage.org/ws1999rs-tmn.mov", subtitleUrl:"subtitles/ws1999rs-tmn.vtt"}
   ]
 };
