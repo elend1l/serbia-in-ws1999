@@ -1,4 +1,29 @@
 let page=1, answers={name:"",songs:{},favourite:"",feedback:""};
+
+async function checkSurveyStatus() {
+  if (SURVEY_CONFIG.googleAppsScriptUrl.startsWith("PASTE_")) {
+    return;
+  }
+
+  try {
+    const response = await fetch(SURVEY_CONFIG.googleAppsScriptUrl);
+    const status = await response.json();
+
+    if (!status.open) {
+      document.querySelectorAll(".page").forEach(p => {
+        p.classList.remove("active");
+      });
+
+      document.querySelector('[data-page="8"]').classList.add("active");
+      $("#bar").style.width = "100%";
+    }
+  } catch (error) {
+    console.error("Could not check survey status:", error);
+  }
+}
+
+checkSurveyStatus();
+
 const $=s=>document.querySelector(s);
 function fmt(x){if(!isFinite(x))return"0:00";x=Math.floor(x);return Math.floor(x/60)+":"+String(x%60).padStart(2,"0")}
 
