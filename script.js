@@ -1,7 +1,22 @@
 let page=1, answers={name:"",songs:{},favourite:"",feedback:""};
 const $=s=>document.querySelector(s);
 function fmt(x){if(!isFinite(x))return"0:00";x=Math.floor(x);return Math.floor(x/60)+":"+String(x%60).padStart(2,"0")}
-function show(n){document.querySelectorAll(".page").forEach(x=>x.classList.toggle("active",x.dataset.page==n));page=n;$("#bar").style.width=(n/6*100)+"%";scrollTo({top:0,behavior:"smooth"})}
+
+function show(n) {
+  // Stop any video that is currently playing
+  document.querySelectorAll("video").forEach(video => {
+    video.pause();
+  });
+
+  document.querySelectorAll(".page").forEach(x =>
+    x.classList.toggle("active", x.dataset.page == n)
+  );
+
+  page = n;
+  $("#bar").style.width = (n / 6 * 100) + "%";
+  scrollTo({ top: 0, behavior: "smooth" });
+}
+
 function scale(i,type,text){let d=document.createElement("div");d.innerHTML=`<label>${text} <b>*</b></label><div class="scale">${[1,2,3,4,5,6,7,8,9,10].map(n=>`<label><input type="radio" name="${type}-${i}" value="${n}">${n}</label>`).join("")}</div><p class="error" id="${type}e${i}"></p>`;return d}
 function player(song){
  let w=document.createElement("div");w.className="player";
