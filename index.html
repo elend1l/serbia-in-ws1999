@@ -1,45 +1,62 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Serbia in WS 1999 — Internal Selection Survey</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Serbia in WS 1999 — Internal Selection Survey</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<main class="container">
-<div class="progress"><span id="bar"></span></div>
+    <main class="container">
+        <div class="progress"><span id="bar"></span></div>
 
-<section class="page active" data-page="1">
-<h1>Serbia in WS 1999</h1>
-<h2>Internal Selection Survey</h2>
-<p> Thank you for taking part in this survey. You will watch four songs and evaluate each one on two scales. All 4 songs are by the same artist — the Serbian rock band <b>Negative</b> — from their <a href="https://en.wikipedia.org/wiki/Negative_(Negative_album)" target="_blank">1999 debut album</a>. At the end, you will select your favourite and may leave additional feedback.</p>
-<p>All required questions must be answered before continuing.</p>
-<label for="name">Your name <b>*</b></label>
-<input id="name" required autocomplete="name">
-<p class="error" id="nameError"></p>
-<button class="primary" id="start">Next →</button>
-</section>
+        <section class="page active" data-page="1">
+            <h1>Serbia in WS 1999</h1>
+            <h2>Internal Selection Survey</h2>
+            <p> Thank you for taking part in this survey. You will watch four songs and evaluate each one on two scales. All 4 songs are by the same artist — the Serbian rock band <b>Negative</b> — from their <a href="https://en.wikipedia.org/wiki/Negative_(Negative_album)"
+                target="_blank">1999 debut album</a>. At the end, you will select your favourite and may leave additional feedback.</p>
+            <p>All required questions must be answered before continuing.</p>
+            <label for="name">Your name <b>*</b></label>
+            <input id="name" required autocomplete="name">
+            <p class="error" id="nameError"></p>
+            <button class="primary" id="start">Next →</button>
+        </section>
 
-<div id="songPages"></div>
+        <div id="songPages"></div>
 
-<section class="page" data-page="6">
-<h2>Final questions</h2>
-<fieldset><legend>Which song is your favourite? <b>*</b></legend><div id="favourites"></div><p class="error" id="favError"></p></fieldset>
-<label for="feedback">Additional feedback <b>*</b></label>
-<textarea id="feedback" rows="7" placeholder="Your comments..."></textarea>
-<p class="error" id="feedbackError"></p>
-<div class="nav"><button class="secondary" id="backFinal">← Back</button><button class="primary" id="submit">Submit survey</button></div>
-<p id="status"></p>
-</section>
+        <section class="page" data-page="6">
+            <h2>Final questions</h2>
+            <fieldset>
+                <legend>Which song is your favourite? <b>*</b></legend>
+                <div id="favourites"></div>
+                <p class="error" id="favError"></p>
+            </fieldset>
+            <label for="feedback">Additional feedback <b>*</b></label>
+            <textarea id="feedback" rows="7" placeholder="Your comments..."></textarea>
+            <p class="error" id="feedbackError"></p>
+            <div class="nav">
+                <button class="secondary" id="backFinal">← Back</button>
+                <button class="primary" id="submit">Submit survey</button>
+            </div>
+            <p id="status"></p>
+        </section>
 
-<section class="page thankyou" data-page="7"><h1>Thank you!</h1><p>Your survey has been submitted successfully.</p></section>
+        <section class="page thankyou" data-page="7">
+            <h1>Thank you!</h1>
+            <p>Your survey has been submitted successfully.</p>
+        </section>
 
-<section class="page" data-page="8">
-  <div class="thankyou">
-    <h1>Survey closed</h1>
-    <p>This survey is no longer accepting responses.</p>
-  </div>
-</section>
-</main>
-<script src="config.js"></script><script src="script.js"></script>
-</body></html>
+        <section class="page" data-page="8">
+            <div class="thankyou">
+                <h1>Survey closed</h1>
+                <p>This survey is no longer accepting responses.</p>
+            </div>
+        </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
